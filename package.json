@@ -1,0 +1,22 @@
+{
+  "name": "meu-mural-de-avisos",
+  "version": "1.0.0",
+  "description": "Um aplicativo de mural de avisos onde os usuários podem postar e visualizar mensagens.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SantFabio/mural-de-avisos.git"
+  },
+  "author": "Luiz Fábio P Santana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SantFabio/mural-de-avisos/issues"
+  },
+  "homepage": "https://github.com/SantFabio/mural-de-avisos#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
