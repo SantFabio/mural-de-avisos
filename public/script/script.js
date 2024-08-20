@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 // let idsPost = [];
 function updatePosts() {
-    fetch("http://192.168.3.50:3000/api/all", {
+    fetch("http://192.168.3.50:5000/api/all", {
         method: "GET",
     }).then(res => {
         return res.json();
@@ -39,7 +39,7 @@ function newPost() {
         headers: new Headers({ "Content-Type": "application/json" }),
         body: JSON.stringify(post)
     }
-    fetch("http://192.168.3.50:3000/api/new", options)
+    fetch("http://192.168.3.50:5000/api/new", options)
         .then(res => {
             return res.text();
         }).then(data => {
@@ -51,7 +51,7 @@ function newPost() {
 }
 function deletePost(item) {
     const cardId = item.closest('.card').id; //closest para acessar o elemento .card do botão clicado
-    fetch(`http://192.168.3.50:3000/api/delete/${cardId}`, {
+    fetch(`http://192.168.3.50:5000/api/delete/${cardId}`, {
         method: "DELETE"
     }).then(res => {
         if (!res.ok) {
